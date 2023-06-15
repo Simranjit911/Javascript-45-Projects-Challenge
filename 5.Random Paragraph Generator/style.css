@@ -4,8 +4,7 @@
     box-sizing: border-box;
   }
   body {
-    background-color: black;
+    background-color: rgb(247, 240, 240);
     font-family: "Arial Narrow Bold", sans-serif;
-    transition: 0.5s cubic-bezier(0.39, 0.575, 0.565, 1);   
-  
+    transition: 0.5s cubic-bezier(0.39, 0.575, 0.565, 1);     
   }
