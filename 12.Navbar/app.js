@@ -1,14 +1,5 @@
-let ham=document.querySelector('.ham')
-let nav=document.querySelector('.links2')
-ham.addEventListener('click',fun)
-
-
-nav.style.display="none"
-function fun(){
-    if(nav.style.display=="none"){
-        nav.style.display="block"
-    }
-    else{
-        nav.style.display="none"
-    }    
-}
+const menu=document.querySelector('.menubtn')
+const link=document.querySelector('.fst')
+menu.addEventListener('click',()=>{
+    link.classList.toggle('active')
+})

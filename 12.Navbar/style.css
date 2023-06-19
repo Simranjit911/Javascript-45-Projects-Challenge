@@ -40,9 +40,10 @@ a:hover {
   color: black;
   background-color: white;
 }
-.ham {
+.menubtn {
   display: none;
 }
+
 @media (min-width: 900px) {
   ul a {
     font-size: 1.3rem;
@@ -50,59 +51,71 @@ a:hover {
 }
 
 @media (max-width: 808px) {
-  .active {
-    display: none;
-  }
-  .ham {
+  .menubtn {
+    z-index: 1;
     display: block;
-    cursor: pointer;
-    font-size: 1rem;
-    transition: 1.5s ease-in-out;
   }
-  .ham.links {
-    transition: 0.5s ease-in-out;
+ .logo{
+    z-index: 1;
   }
-  .ham .links2 ul {
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    position: absolute;
+  
+  
+  .fst {
+
+    object-fit: cover;
+    padding: -90px;
+    height: 98vh;
     background-color: black;
-    width: 100vw;
-    left: 0%;
-    right: 0%;
-    top: 6.8%;
+    width: 100%;
+    top: 4.90%;
+    left: 0;
+    right: 0;
+    margin-left: -1200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    flex-direction: column;
+    transition: all 0.5s ease;
   }
-  .ham .links2 ul li {
-    font-size: 1.9rem;
-    padding: 0.5rem;
+  .menubtn{
+    font-size: 1.5rem;
   }
-  .ham .links2 ul a:hover {
-    background-color: white;
+  .active{
+    margin-left: 0;
+  }
+  .fst li{
+
+    margin: 40px;
+  }
+  .fst li a{  
+
+    padding: 15px 25px;
+    font-size: 1.5rem;
   }
 }
 @media (max-width: 415px) {
-    .ham .links2 ul {
-        top: 5%;
-    }
+  .ham .links2 ul {
+    top: 5%;
+  }
 }
-@media (max-width:768px) {
-    .ham .links2 ul{
-        top: 5.6%;
-    }
+@media (max-width: 768px) {
+  .ham .links2 ul {
+    top: 5.6%;
+  }
 }
 @media (max-width: 390px) {
   .ham .links2 ul {
     top: 6.4%;
   }
 }
-@media (max-width:376px) {
-    .ham .links2 ul{
-        top: 5.3%;
-    }
+@media (max-width: 376px) {
+  .ham .links2 ul {
+    top: 5.3%;
+  }
 }
-@media (max-width:361px) {
-    .ham .links2 ul{
-        top: 5.7%;
-    }
+@media (max-width: 361px) {
+  .ham .links2 ul {
+    top: 5.7%;
+  }
 }

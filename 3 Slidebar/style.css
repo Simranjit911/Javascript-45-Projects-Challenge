@@ -1,62 +1,59 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    color: #fff;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #fff;
 }
-.blackdoc{
-    height: 100vh;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #000000c8;
-    position: relative;
+.blackdoc {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #000000c8;
+  position: relative;
 }
-.threedots{
-    font-size: 40px;
-    position: absolute;
-    top: 3%;
-    left: 95%;
-    cursor: pointer;    
+.threedots {
+  font-size: 40px;
+  position: absolute;
+  top: 3%;
+  left: 95%;
+  cursor: pointer;
 }
-.container{
-    height: 100vh;
-    width:0 ;
+.container {
+  height: 100vh;
+  width: 0;
 
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 1;
-    overflow-x: hidden;
-    background-color: tomato;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  overflow-x: hidden;
+  background-color: tomato;
 }
-.cut{
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    font-size: 40px;
-    cursor: pointer;
+.cut {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 40px;
+  cursor: pointer;
 }
-a{
-    text-decoration: none;
-    margin: 25px;
-    font-size: 40px;
+a {
+  text-decoration: none;
+  margin: 25px;
+  font-size: 40px;
 }
-.nav{
 
+.nav ul {
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  display: flex;
+  text-align: center;
+  list-style: none;
+  height: 100vh;
+  width: 50vw;
 }
-.nav ul{
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    display: flex;
-    text-align: center;
-    list-style: none;
-    height: 100vh;
-    width: 50vw;
-}
-li{
-    margin: 25px 0;
-    
+li {
+  margin: 25px 0;
 }
