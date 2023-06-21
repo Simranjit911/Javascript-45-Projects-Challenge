@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OTP Validation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Enter OTP:</h1>
+        <div class="input">
+            <input type="number" id="first" class="otpinput" maxlength="1" onkeyup="clickevent(this,'sec')">
+            <input type="number" id="sec" class="otpinput" maxlength="1" onkeyup="clickevent(this,'third')">
+            <input type="number" id="third" class="otpinput" maxlength="1" onkeyup="clickevent(this,'fourth')">
+            <input type="number" id="fourth" class="otpinput" maxlength="1" ">
+                 
+        </div>
+        <button onclick="sent()">Submit Now</button>
+    </div>
+    <script>
+        function clickevent(first,last){
+            if(first.value.length){
+                document.getElementById(last).focus()
+            }
+        }
+        let input=document.querySelectorAll('.otpinput')[0]
+        let btn=document.getElementByClassName('button')
+        function sent(){
+            input.HTML=' v  '
+            for(let i=0;i<4;i++){
+
+            }
+
+
+            alert('otp sent')
+        }
+
+       
+    </script>
+</body>
+</html>

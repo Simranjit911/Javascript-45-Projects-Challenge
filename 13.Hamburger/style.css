@@ -49,6 +49,7 @@ ul{
   cursor: pointer;
   font-size: 25px;
   display: none;
+  visibility: hidden;
 }
 @media screen and (max-width:900px) {
   .navbar{
@@ -91,6 +92,7 @@ ul{
   }
   .menu-btn{
     display: block;
+    visibility: visible;
   }
   nav ul li{
     padding-left: 15px;
