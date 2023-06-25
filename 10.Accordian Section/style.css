@@ -1,43 +1,68 @@
 *{
-    margin: 0;
-    padding: 0;
+    margin: 0;padding: 0;
     box-sizing: border-box;
 }
 body{
     background-color: rgb(255, 215, 250);
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    padding: 40px;
-    text-align: center;    
-    line-height: 1.6rem;
+   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
+h2{
+    text-align: center;
+    margin-top: 100px ;
+    margin-bottom: 50px ;
+}
+.faqs{
+    transition:all 3s ease-in;
 
-.accordian{
-    background-color: #fff;
-    width: 60%;
-    margin: 0 auto;
-    padding: 10px 16px;
-    margin-bottom: 16px;
-    border-radius: 4px;
-    box-shadow: 1px 1px 4px #000;
+    text-align: center;
+    margin: 20px 10%;
+    
+}
+details summary{
+    transition: margin 1s ease-out;
+
+    font-size: 18px;
+    font-weight: 400;
     cursor: pointer;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    list-style: none;
+    text-align: left;
+    background-color:  #253447;
+    color: white;
+    padding: 10px;
+
+
 }
-.question{
-    display: flex;
-    justify-content: space-between;
-    margin: 10px 10px;
-    align-items: center;
-    font-size: 1.2rem;
-    font-weight: 900;
+details p{
+    transition:all 3s ease-in;
+
+    font-size: 15px;
+    font-weight: 200;
+    background-color: #1c2938;
+    color: white;
+    padding: 20px;
+    box-shadow: 3px 3px 6px black;
+    border: 1px solid rgb(0, 0, 0);
+   
 }
-i{
-    font-size: 1.3rem;
-    margin-right: 10px;
+details{
+    transition:all 3s ease-in;
 }
-.answer{
-    height: 0px;
-    overflow: hidden;
-    cursor: pointer;
+summary::after{
+    content: '\271A';
+    
+    float: right;
+    margin-right: 30px;
 }
-.accordian .answer:active{
-    height: 150px;
+details[open] summary::after{
+    content: '\2716';
+    transition: margin 150ms ease-out;
+    animation: sweep .5s ease-in-out;
+   
+
 }
+@keyframes sweep {
+    0%    {opacity: 0; margin-left: -10px}
+    100%  {opacity: 1; margin-left: 0px}
+  }
