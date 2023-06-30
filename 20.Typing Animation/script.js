@@ -1,10 +1,10 @@
 const heading=document.querySelector('.maintext')
 let text='I am Sam\nA Full Stack Developer'
-let endvaal=1
+let endvaal=1//index to iterate over text
 let bool=1
 let id=setInterval(() => {
     heading.textContent=text.substring(0,endvaal)
-    if(bool){
+    if(bool==1){
         endvaal++
     }
     else{
@@ -17,4 +17,4 @@ let id=setInterval(() => {
     else if(endvaal<1){
         bool=1
     }
-}, 150);
+}, 130);

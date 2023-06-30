@@ -3,22 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Image Slider</title>
+    <title>Images Slider</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <main>
-        <img src="https://picsum.photos/id/240/1000/500" class="slide" alt="">
-        <img src="https://picsum.photos/id/232/1000/500" class="slide" alt="">
-        <img src="https://picsum.photos/id/239/1000/500" class="slide" alt="">
-        <img src="https://picsum.photos/id/241/1000/500" class="slide" alt="">
-    </main>
-    <div class="btns">
-        <button onclick="goprev()">Prev</button>
-        <button onclick="gonext()">Next</button>
+  <div class="main">
+    <div class="slider">
+        <img src="https://picsum.photos/id/239/1000/500" alt="">
+        <div class="btn">
+            <button onclick="prev()">&#60;</button>
+            <button onclick="next()">&#62;</button>
+        </div>
     </div>
-
-
-    <script src="app.js"></script>
+  </div>
+    
+    <script src="script.js"></script>
 </body>
 </html>
