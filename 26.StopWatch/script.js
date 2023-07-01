@@ -34,10 +34,10 @@ function myfunc() {
         let gethr = h
         if (s < 10) {
             getsec = "0" + s
-            
+
         }
         if (m < 10) {
-            getm= "0" + m
+            getm = "0" + m
 
         }
         if (h < 10) {
@@ -46,9 +46,15 @@ function myfunc() {
         }
 
         setTimeout("myfunc()", 10)
-        document.getElementById("ms").innerHTML = ms; 
+        document.getElementById("ms").innerHTML = ms;
         document.getElementById("sec").innerText = getsec
         document.getElementById("min").innerText = getm
         document.getElementById("hours").innerText = gethr
     }
 }
+let loader = document.querySelector('.loader')
+function func() {
+    loader.classList.add('hide')
+
+}
+setInterval(func, 2000)

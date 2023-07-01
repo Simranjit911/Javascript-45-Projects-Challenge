@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sounds on key press</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    .container {
+        width: 100%;
+        height: 50vh;
+        display: flex;
+        gap: 20px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    img {
+        width: 60%;
+
+    }
+
+    .keys {
+        text-align: center;
+        border: 1px solid black;
+    }
+    #text{
+        color: black;
+    }
+</style>
+
+<body>
+    <div class="container">
+   
+        <div class="keys">
+            <div class="key">
+                <h1>Press Shift</h1>
+               <input type="text" id="input" placeholder="press shift">
+            <h2 id="text"></h2>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
