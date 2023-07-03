@@ -7,16 +7,19 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <main>
-        <div class="box">
-
-            <input type="text" id="item" autofocus>
-            <ul id="todo">
-                <button>hi</button>
-                <li>hi</li>
-            </ul>
+    <div class="box">
+        <h2>Todo App</h2>
+        <p id="msg"></p>
+        <p id="msg2">Press Enter to Save</p>
+        <div class="inputs">
+            <input type="text" placeholder="Enter You Task" id="input" autofocus onkeypress="enter(event)">
+            <button onclick="add(event)" id="btn">Add</button>
         </div>
-    </main>
+        <div id="text">
+           
+
+        </div>
+    </div>
     
 
 

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Clock</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    #clock {
+        color: #FFF;
+        border: 2px solid rgb(216, 2, 134);
+        border-radius: 0px;
+        padding: 18px 36px;
+        width: max-content;
+        font-family: "Lucida Console", Monaco, ;
+        margin: 0 auto;
+        margin-top: 300px;
+        text-align: center;
+        color: #D80286;
+        font-size: 14px;
+        letter-spacing: 1px;
+        cursor: pointer;
+        box-shadow: inset 0 0 0 0 #D80286;
+        -webkit-transition: ease-out 0.4s;
+        -moz-transition: ease-out 0.4s;
+        transition: ease-out 0.4s;
+
+        font-size: 30px;
+    }
+
+    #clock:hover {
+        color: white;
+        box-shadow: inset 0 0 0 50px #D80286;
+    }
+</style>
+
+<body>
+
+    <div id="clock">
+        11:20
+    </div>
+
+
+    <script>
+        let clock = document.querySelector("#clock")
+        setInterval(() => {
+            let date=new Date()
+            clock.innerHTML=date.toLocaleDateString()
+            clock.innerHTML=date.toLocaleTimeString()
+
+        }, 1000);
+    </script>
+</body>
+
+</html>
