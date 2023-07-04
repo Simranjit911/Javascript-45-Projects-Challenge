@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Copy To Clipboard</title>
+</head>
+<style>
+    .box{
+        height: 200px;
+        width: 200px;
+        border: 1px solid red;
+    }
+</style>
+<body>
+ <input type="text" class="box">
+ <input type="text" class="box2">
+    <!-- < class="box2" ></> -->
+    <button id="btn" onclick="copy()">Copy</button>
+    <script>
+  
+
+        let text=document.querySelector('.box')
+        let text2=document.getElementById('box2')
+        let btn=document.getElementById('btn')
+
+       
+        function copy(){
+            text.select()
+            // copy to Clipboard
+          let clip=document.execCommand("copy") 
+          text2.value=text
+        }
+    </script>
+</body>
+</html>
