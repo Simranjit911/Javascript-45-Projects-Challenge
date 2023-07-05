@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Visits</title>
+</head>
+<body onload="inc()">
+    <div class="pagevisit">
+        <h1>Total Page Visit= <span id="num">1</span></h1>
+        
+    </div>
+
+    
+    <script>
+        let num=document.getElementById('num')
+       function cnt(){
+        let n=localStorage.getItem("item")
+        if(n==null){
+            n=0
+        }
+        n++
+        localStorage.setItem("item",n)
+        num.innerText=n
+
+       }       
+        cnt()
+    </script>
+</body>
+</html>
