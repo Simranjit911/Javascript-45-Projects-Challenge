@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slider 2</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="main">
+        <div id="slider">
+            <button id="left" onclick="minus()">-</button>
+            <img src="" alt="" id="img">
+           
+            <button id="right" onclick="plus()">+</button>
+        </div>
+    </div>
+    <script>
+        let img = document.getElementById('img')
+        let i = 0
+        let arr = 
+        ["https://picsum.photos/id/269/1000/500", "https://picsum.photos/id/229/1000/500", "https://picsum.photos/id/235/1000/500", "https://picsum.photos/id/249/1000/500",
+        "https://picsum.photos/id/219/1000/500"]
+        img.src = arr[i]
+        function minus(){
+            i--
+            if(i<0){
+                i=arr.length-1
+                img.src=arr[i]                
+            }else{
+                img.src=arr[i]
+            }
+            
+        }
+        window.onload=change()
+        function plus(){
+            i++
+            if(i>=arr.length){
+                i=0              
+                img.src=arr[i]               
+
+            }else{
+                img.src=arr[i]                
+            }
+        }
+        function change(){
+            minus()
+            setTimeout("change()", 3000);
+        }
+
+    </script>
+
+</body>
+
+</html>

@@ -31,8 +31,8 @@ let i = 0
 let images = []
 let time = 10000
 let slide = document.querySelector('#slide')
-images[0] = "New/pexels-photo-170811.jpeg"
-images[1] = "New/pexels-photo-358070.jpeg"
+images[0] = "https://picsum.photos/id/237/1000/500"
+images[1] = "https://picsum.photos/id/230/1000/500"
 images[2] = 'https://picsum.photos/id/239/1000/500'
 images[3] = 'https://picsum.photos/id/232/1000/500'
 
