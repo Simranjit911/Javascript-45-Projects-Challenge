@@ -1,0 +1,94 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 100%;
+  width: 100%;
+}
+.box {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+ grid-auto-rows: 150px;
+  gap: 10px;
+  grid-template-areas: 
+  "box1 box2 box2 box3"
+  "box1 box4 box5 box6"
+  "box1 box7 box8 box6"
+  "box9 box9 box9 box9"
+  
+  ;
+}
+
+div {
+    background-color: blueviolet;
+  /* height: 150px; */
+  border: 2px solid;
+  text-align: center;
+  padding: 10px;
+  box-shadow: 3px 3px 6px blueviolet;
+}
+
+.box1{
+grid-area: box1;
+position: relative;
+}
+.box2{
+grid-area: box2;
+}
+.box3{
+grid-area: box3;
+}
+.box4{
+grid-area: box4;
+}
+.box5{
+grid-area: box5;
+}
+.box6{
+grid-area: box6;
+}
+.box7{
+grid-area: box7;
+}
+.box8{
+grid-area: box8;
+}
+.box9{
+grid-area: box9;
+}
+@media (max-width:800px) {
+    .box{
+        grid-template-areas: 
+        "box1 box2 box2 box3"
+        "box1 box4 box5 box5"
+        "box1 box6 box6 box6"
+        "box1 box7 box8 box10"
+        "box9 box9 box9 box9"
+        
+        ;
+    }
+}
+.child{
+    position: absolute;
+    background-color: red;
+    height: 150px;
+    width: 150px;
+    top: 0%;
+    left: 100%;
+}
+.pos{
+    height: 300px;
+    width: 300px;
+    background-color: grey;
+    position: relative;
+}
+.pos div{
+    background-color: rgb(24, 38, 38);
+}
+.i1{
+    position: absolute;
+    top: 5%;
+    left: 80%;
+}
